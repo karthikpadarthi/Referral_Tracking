@@ -8,6 +8,5 @@ import java.util.Optional;
 public interface User_Repository extends JpaRepository<User_Model,Long> {
     Optional<User_Model> findByReferralCode(String referralCode);
     long countByReferredBy(String referralCode);
-//    List<User_Model> findByReferredCode(String referralCode);
     List<User_Model> findAllByReferredBy(String referredBy);
 }
