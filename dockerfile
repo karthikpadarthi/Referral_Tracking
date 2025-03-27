@@ -1,14 +1,4 @@
-# Use official OpenJDK runtime as a parent image
-FROM openjdk:17-jdk-slim
-
-# Set the working directory inside the container
+FROM eclipse-temurin:17-jdk
 WORKDIR /app
-
-# Copy the JAR file from the target directory into the container
-COPY target/*.jar app.jar
-
-# Expose the port that the Spring Boot application runs on
-EXPOSE 8081
-
-# Run the application
+COPY target/required-0.0.1-SNAPSHOT.jar
 CMD ["java", "-jar", "app.jar"]
