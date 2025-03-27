@@ -1,0 +1,6 @@
+com\backend\required\model\User_Model.class
+com\backend\required\model\ReferralDto.class
+com\backend\required\repository\User_Repository.class
+com\backend\required\RequiredApplication.class
+com\backend\required\controller\User_Controller.class
+com\backend\required\service\User_Service.class
