@@ -13,12 +13,11 @@ The **Referral Tracking System** is a backend service built with **Spring Boot**
 ### **Referrals**
 | Method | Endpoint              | Description                  |
 |--------|-----------------------|------------------------------|
-| `POST` | `/api/users`          | Create a new referral        |
-| `GET`  | `/api/users`          | Get all referrals            |
-| `GET`  | `/api/users/{id}`     | Get referral by ID           |
-| `PUT`  | `/api/users/{id}`     | Update referral details      |
-| `DELETE` | `/api/users/{id}`     | Delete a referral            |
-| `GET`  | `/api/users/download` | Download referrals as CSV |
+| `POST` | `/api/users/signup`          | Create a new account        |
+| `GET`  | `/api/users/referrals/{referralCode}`          | Get all referrals            |
+| `GET`  | `/api/users//referred-users/{referralCode}`     | Get referral by ID           |
+| `POST`  | `/complete-profile/{userId}`     | Complete Profile      |
+| `GET`  | `/api/users/download-csv/{referralCode}` | Download referrals as CSV |
 
 ### Steps:
 1. Clone this repository:
