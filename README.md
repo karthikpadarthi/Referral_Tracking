@@ -7,7 +7,7 @@ The **Referral Tracking System** is a backend service built with **Spring Boot**
 - **Spring Boot** – Backend framework
 - **Spring Data JPA** – Database interaction
 - **MySQL** – Database
-- **Maven/Gradle** – Dependency management
+- **Maven** – Dependency management
 
 ## 📌 API Endpoints
 ### **Referrals**
@@ -15,7 +15,7 @@ The **Referral Tracking System** is a backend service built with **Spring Boot**
 |--------|-----------------------|------------------------------|
 | `POST` | `/api/users/signup`          | Create a new account        |
 | `GET`  | `/api/users/referrals/{referralCode}`          | Get all referrals            |
-| `GET`  | `/api/users//referred-users/{referralCode}`     | Get referral by ID           |
+| `GET`  | `/api/users/referred-users/{referralCode}`     | Get referral by ID           |
 | `POST`  | `/complete-profile/{userId}`     | Complete Profile      |
 | `GET`  | `/api/users/download-csv/{referralCode}` | Download referrals as CSV |
 
@@ -30,8 +30,6 @@ The **Referral Tracking System** is a backend service built with **Spring Boot**
     mvn clean install
     mvn spring-boot:run
 
-Test the API using cURL or Postman:
-curl -X GET ""
 
 ## 🛠️ Dependencies
 
